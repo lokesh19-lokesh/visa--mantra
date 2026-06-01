@@ -2,20 +2,32 @@
 @import url('https://cdn.jsdelivr.net/npm/@fontsource/aileron/index.css');
 
 :root {
-    --primary-dark: #090d16;
-    --primary-slate: #151c2c;
-    --primary-light-slate: #1e293b;
-    --accent-gold: #c5a85c;
-    --accent-gold-hover: #e5c36a;
-    --accent-gold-glow: rgba(197, 168, 92, 0.2);
-    --text-light: #f8fafc;
-    --text-muted: #a1b0cb;
-    --text-dark: #0f172a;
+    --primary-dark: #0e0a0a;
+    --primary-slate: #1b1212;
+    --primary-light-slate: #2a1c1b;
+    --accent-gold: #e53935;
+    --accent-gold-hover: #f57c00;
+    --accent-gold-glow: rgba(229, 57, 53, 0.2);
+    --text-light: #fdfaf9;
+    --text-muted: #c2b0af;
+    --text-dark: #2d2d2d;
     --white: #ffffff;
-    --body-bg: #090d16;
-    --card-bg: #131b2e;
+    --body-bg: #0e0a0a;
+    --card-bg: #161010;
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* Warm Gradient Palette from Logo */
+    --brand-gradient: linear-gradient(135deg, #e53935 0%, #f4511e 35%, #f57c00 65%, #f9a825 100%);
+    --brand-gradient-hover: linear-gradient(135deg, #f57c00 0%, #f9a825 50%, #ffd180 100%);
+
+    /* Dedicated Brand Colors */
+    --brand-red: #e53935;
+    --brand-red-dark: #c03020;
+    --brand-orange: #f57c00;
+    --brand-orange-gold: #f9a825;
+    --brand-gold-light: #ffd180;
 }
+
 
 * {
     margin: 0;
@@ -114,17 +126,17 @@ h6,
     0% {
         transform: scale(0.8) translateY(20px);
         opacity: 0;
-        filter: drop-shadow(0 0 0 rgba(197, 168, 92, 0));
+        filter: drop-shadow(0 0 0 rgba(229, 57, 53, 0));
     }
 
     50% {
-        filter: drop-shadow(0 0 20px rgba(197, 168, 92, 0.4));
+        filter: drop-shadow(0 0 20px rgba(229, 57, 53, 0.4));
     }
 
     100% {
         transform: scale(1) translateY(0);
         opacity: 1;
-        filter: drop-shadow(0 0 15px rgba(197, 168, 92, 0.25));
+        filter: drop-shadow(0 0 15px rgba(229, 57, 53, 0.25));
     }
 }
 
@@ -149,7 +161,7 @@ body.preloader-active {
 
 /* Glassmorphism Navbar */
 .navbar-glass {
-    background: rgba(9, 13, 22, 0.8) !important;
+    background: rgba(14, 10, 10, 0.8) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -159,7 +171,7 @@ body.preloader-active {
 
 .navbar-glass.scrolled {
     padding: 0 !important;
-    background: rgba(9, 13, 22, 0.95) !important;
+    background: rgba(14, 10, 10, 0.95) !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -261,19 +273,20 @@ body.preloader-active {
     top: 50%;
     transform: translateY(-50%) rotate(-90deg);
     z-index: 999;
-    background: var(--accent-gold);
-    color: var(--primary-dark);
+    background: var(--brand-gradient);
+    color: var(--white);
     padding: 10px 20px;
     cursor: pointer;
     font-family: 'Aileron', sans-serif;
     font-weight: 600;
     border-radius: 4px 4px 0 0;
-    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 0 15px rgba(229, 57, 53, 0.2);
     transition: var(--transition-smooth);
 }
 
 .sidebar-contact-trigger:hover {
-    background: var(--accent-gold-hover);
+    background: var(--brand-gradient-hover);
+    color: var(--primary-dark);
     right: -40px;
 }
 
@@ -293,7 +306,7 @@ body.preloader-active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(9, 13, 22, 0.4) 0%, rgba(9, 13, 22, 0.85) 100%);
+    background: linear-gradient(180deg, rgba(14, 10, 10, 0.4) 0%, rgba(14, 10, 10, 0.85) 100%);
     z-index: 1;
 }
 
@@ -317,21 +330,23 @@ body.preloader-active {
 
 /* Premium Buttons */
 .btn-gold {
-    background-color: var(--accent-gold);
-    color: var(--primary-dark) !important;
+    background: var(--brand-gradient);
+    color: var(--white) !important;
     font-family: 'Aileron', sans-serif;
     font-weight: 600;
-    border: 2px solid var(--accent-gold);
+    border: none;
     padding: 12px 28px;
     border-radius: 4px;
     transition: var(--transition-smooth);
     letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.3);
 }
 
 .btn-gold:hover {
-    background-color: transparent;
-    color: var(--accent-gold) !important;
-    box-shadow: 0 0 20px var(--accent-gold-glow);
+    background: var(--brand-gradient-hover);
+    color: var(--primary-dark) !important;
+    box-shadow: 0 6px 20px rgba(245, 124, 0, 0.4);
+    transform: translateY(-2px);
 }
 
 .btn-outline-gold {
@@ -346,8 +361,11 @@ body.preloader-active {
 }
 
 .btn-outline-gold:hover {
-    background-color: var(--accent-gold);
-    color: var(--primary-dark) !important;
+    background: var(--brand-gradient);
+    border-color: transparent;
+    color: var(--white) !important;
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.3);
+    transform: translateY(-2px);
 }
 
 /* Card Styling */
@@ -385,7 +403,7 @@ body.preloader-active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(197, 168, 92, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle at 50% 50%, rgba(229, 57, 53, 0.06) 0%, transparent 70%);
     opacity: 0;
     transition: var(--transition-smooth);
     z-index: -1;
@@ -397,8 +415,8 @@ body.preloader-active {
 
 .premium-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(197, 168, 92, 0.1);
-    border-color: rgba(197, 168, 92, 0.35);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(229, 57, 53, 0.1);
+    border-color: rgba(229, 57, 53, 0.35);
 }
 
 .premium-card:hover::before {
@@ -425,7 +443,7 @@ body.preloader-active {
 .premium-card:hover .card-icon {
     animation: iconFloat 2s ease-in-out infinite;
     color: var(--accent-gold-hover);
-    filter: drop-shadow(0 0 8px rgba(229, 195, 106, 0.3));
+    filter: drop-shadow(0 0 8px rgba(245, 124, 0, 0.3));
 }
 
 @keyframes iconFloat {
@@ -511,7 +529,7 @@ body.preloader-active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(9, 13, 22, 0.1) 40%, rgba(9, 13, 22, 0.9) 100%);
+    background: linear-gradient(180deg, rgba(14, 10, 10, 0.1) 40%, rgba(14, 10, 10, 0.9) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -524,7 +542,7 @@ body.preloader-active {
 }
 
 .country-card:hover .country-overlay {
-    background: linear-gradient(180deg, rgba(9, 13, 22, 0.2) 20%, rgba(9, 13, 22, 0.95) 100%);
+    background: linear-gradient(180deg, rgba(14, 10, 10, 0.2) 20%, rgba(14, 10, 10, 0.95) 100%);
 }
 
 .country-badge {
@@ -601,7 +619,7 @@ body.preloader-active {
 
 /* Form Styles */
 .form-glass {
-    background: rgba(21, 28, 44, 0.6);
+    background: rgba(27, 18, 18, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     padding: 40px;
@@ -610,7 +628,7 @@ body.preloader-active {
 
 .form-control,
 .form-select {
-    background-color: rgba(9, 13, 22, 0.6) !important;
+    background-color: rgba(14, 10, 10, 0.6) !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     color: var(--text-light) !important;
     padding: 12px 18px;
@@ -732,7 +750,7 @@ body.preloader-active {
 .blog-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    border-color: rgba(197, 168, 92, 0.2);
+    border-color: rgba(229, 57, 53, 0.2);
 }
 
 /* Contact Info Blocks */
@@ -837,7 +855,7 @@ body.preloader-active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(9, 13, 22, 0.4) 0%, rgba(9, 13, 22, 0.85) 100%);
+    background: linear-gradient(180deg, rgba(14, 10, 10, 0.4) 0%, rgba(14, 10, 10, 0.85) 100%);
 }
 
 .inner-banner-content {
@@ -862,17 +880,17 @@ body.preloader-active {
 
 .bubbles-hover-link:hover {
     color: var(--accent-gold-hover) !important;
-    text-shadow: 0 0 8px rgba(229, 195, 106, 0.4);
+    text-shadow: 0 0 8px rgba(245, 124, 0, 0.4);
 }
 
 .bubble-effect {
     position: absolute;
     bottom: 100%;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6), rgba(197, 168, 92, 0.2) 60%, rgba(197, 168, 92, 0.7) 100%);
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6), rgba(229, 57, 53, 0.2) 60%, rgba(229, 57, 53, 0.7) 100%);
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     pointer-events: none;
-    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 0 0 4px rgba(197, 168, 92, 0.25);
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 0 0 4px rgba(229, 57, 53, 0.25);
     animation: bubbleRise 1.2s ease-out forwards;
     z-index: 10;
 }
@@ -900,7 +918,7 @@ body.preloader-active {
 
 .premium-img-card:hover {
     transform: translateY(-5px) scale(1.01);
-    box-shadow: 0 20px 40px rgba(197, 168, 92, 0.18) !important;
+    box-shadow: 0 20px 40px rgba(229, 57, 53, 0.18) !important;
 }
 
 /* Reviews/Success Stories Carousel Styling */
@@ -917,8 +935,8 @@ body.preloader-active {
 .custom-carousel-btn {
     width: 45px;
     height: 45px;
-    background: rgba(9, 13, 22, 0.6) !important;
-    border: 1px solid rgba(197, 168, 92, 0.3) !important;
+    background: rgba(14, 10, 10, 0.6) !important;
+    border: 1px solid rgba(229, 57, 53, 0.3) !important;
     border-radius: 50% !important;
     position: absolute;
     top: 50%;
@@ -931,9 +949,9 @@ body.preloader-active {
 }
 
 .custom-carousel-btn:hover {
-    background: var(--accent-gold) !important;
-    border-color: var(--accent-gold) !important;
-    box-shadow: 0 0 15px rgba(197, 168, 92, 0.4);
+    background: var(--brand-gradient) !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 15px rgba(229, 57, 53, 0.4);
     opacity: 1;
 }
 
@@ -967,7 +985,7 @@ body.preloader-active {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgba(197, 168, 92, 0.3);
+    background-color: rgba(229, 57, 53, 0.3);
     border: none;
     padding: 0;
     transition: var(--transition-smooth);
@@ -979,7 +997,7 @@ body.preloader-active {
 #reviewsCarousel .carousel-indicators .active {
     background-color: var(--accent-gold);
     transform: scale(1.3);
-    box-shadow: 0 0 8px rgba(197, 168, 92, 0.6);
+    box-shadow: 0 0 8px rgba(229, 57, 53, 0.6);
 }
 
 /* Responsive adjustments */
@@ -1001,7 +1019,7 @@ body.preloader-active {
 
 .footer-logo-img:hover {
     transform: scale(1.03);
-    filter: drop-shadow(0 0 10px rgba(197, 168, 92, 0.5));
+    filter: drop-shadow(0 0 10px rgba(229, 57, 53, 0.5));
 }
 
 @media (max-width: 767.98px) {

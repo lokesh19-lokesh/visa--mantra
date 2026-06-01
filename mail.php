@@ -45,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <title>New Career Inquiry</title>
         <style>
             body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; margin: 0; padding: 20px; }
-            .container { background-color: #ffffff; padding: 30px; border-radius: 8px; border-top: 4px solid #c5a85c; }
-            h2 { color: #151c2c; margin-top: 0; }
+            .container { background-color: #ffffff; padding: 30px; border-radius: 8px; border-top: 4px solid #e53935; }
+            h2 { color: #1b1212; margin-top: 0; }
             table { width: 100%; border-collapse: collapse; margin-top: 20px; }
             th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
             th { background-color: #f8fafc; color: #1e293b; width: 30%; }
@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             .success-card {
                 background: var(--card-bg);
-                border: 1px solid rgba(197, 168, 92, 0.25);
+                border: 1px solid rgba(229, 57, 53, 0.25);
                 border-radius: 8px;
                 padding: 50px;
                 box-shadow: 0 15px 40px rgba(0,0,0,0.5);
