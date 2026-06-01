@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // 2. Setup Email Parameters
-    $to = "info@visamantra.in"; // Primary contact mailbox
+    $to = "info.Thevisamantra@gmail.com"; // Primary contact mailbox
     $subject = "The Visa Mantra Website Lead - " . ucwords(str_replace('_', ' ', $form_source));
     
     // Create random boundary for multi-part email (required for attachments)
