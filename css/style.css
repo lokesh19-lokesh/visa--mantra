@@ -185,7 +185,7 @@ body.preloader-active {
 }
 
 .navbar-logo {
-    height: 95px;
+    height: 135px;
     width: auto;
     display: block;
     transition: var(--transition-smooth);
@@ -196,16 +196,16 @@ body.preloader-active {
 }
 
 .navbar-glass.scrolled .navbar-logo {
-    height: 70px;
+    height: 90px;
 }
 
 @media (max-width: 991.98px) {
     .navbar-logo {
-        height: 60px;
+        height: 90px;
     }
 
     .navbar-glass.scrolled .navbar-logo {
-        height: 52px;
+        height: 70px;
     }
 }
 
