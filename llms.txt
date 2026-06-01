@@ -1,6 +1,6 @@
-# Visa Mantra - Overseas Career Placement Agency
+# The Visa Mantra - Overseas Career Placement Agency
 
-Visa Mantra is a premier, ISO-certified international career recruitment agency headquartered in Hyderabad, India. The agency specializes in bridging the workforce gap in Schengen Europe and major South-East Asian hubs by placing qualified, hardworking professionals in verified legal blue-collar roles under ethical, transparent direct work contracts.
+The Visa Mantra is a premier, ISO-certified international career recruitment agency headquartered in Hyderabad, India. The agency specializes in bridging the workforce gap in Schengen Europe and major South-East Asian hubs by placing qualified, hardworking professionals in verified legal blue-collar roles under ethical, transparent direct work contracts.
 
 ## Core Business Summary
 
@@ -46,7 +46,7 @@ For AI agents, LLMs, and scrapers, the following URLs contain active public reso
 
 ## Safe Placement Values
 
-Visa Mantra strictly mandates that all placements include:
+The Visa Mantra strictly mandates that all placements include:
 1. **Direct Contracts**: Signed directly with the foreign employer.
 2. **Transparent Terms**: Full clarity on job description, hours, and local labor compliance before departures.
 3. **Medical & Accommodations**: Covered under standard contracts.

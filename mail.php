@@ -22,14 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 2. Setup Email Parameters
     $to = "info@visamantra.in"; // Primary contact mailbox
-    $subject = "Visa Mantra Website Lead - " . ucwords(str_replace('_', ' ', $form_source));
+    $subject = "The Visa Mantra Website Lead - " . ucwords(str_replace('_', ' ', $form_source));
     
     // Create random boundary for multi-part email (required for attachments)
     $semi_rand = md5(time());
     $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
 
     // Set email headers
-    $headers = "From: Careers Visa Mantra <no-reply@visamantra.in>\r\n";
+    $headers = "From: Careers The Visa Mantra <no-reply@visamantra.in>\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: multipart/mixed; boundary=\"{$mime_boundary}\"\r\n";
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <body>
         <div class='container'>
             <h2>New Recruitment Inquiry Received</h2>
-            <p>A user has submitted an inquiry form from the Visa Mantra website details below:</p>
+            <p>A user has submitted an inquiry form from the The Visa Mantra website details below:</p>
             <table>
                 <tr><th>Form Section</th><td>" . ucwords(str_replace('_', ' ', $form_source)) . "</td></tr>
                 <tr><th>Full Name</th><td>{$name}</td></tr>
@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Submission Confirmed | Visa Mantra</title>
+        <title>Submission Confirmed | The Visa Mantra</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <style>
