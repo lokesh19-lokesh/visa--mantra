@@ -68,21 +68,28 @@ h1, h2, h3, h4, h5, h6, .display-font {
 }
 
 .navbar-logo {
-    height: 55px;
+    height: 78px;
     width: auto;
     border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     transition: var(--transition-smooth);
 }
 
 .navbar-logo:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+}
+
+.navbar-glass.scrolled .navbar-logo {
+    height: 65px;
 }
 
 @media (max-width: 991.98px) {
     .navbar-logo {
-        height: 42px;
+        height: 52px;
+    }
+    .navbar-glass.scrolled .navbar-logo {
+        height: 48px;
     }
 }
 
