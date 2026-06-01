@@ -444,22 +444,23 @@ body.preloader-active {
 
 @media (max-width: 767.98px) {
     .premium-card {
-        padding: 20px 15px;
+        padding: 20px 12px; /* Marginally more horizontal breathing room */
     }
 
     .card-icon {
-        font-size: 2.2rem;
-        margin-bottom: 12px;
+        font-size: 2rem; /* Scaled down slightly for 2x2 spacing */
+        margin-bottom: 10px;
     }
 
-    .premium-card h3 {
-        font-size: 1.15rem;
-        margin-bottom: 8px;
+    .premium-card h3,
+    .premium-card h4 {
+        font-size: 1.05rem; /* optimized for 2-column mobile wrap */
+        margin-bottom: 6px;
     }
 
     .premium-card p {
-        font-size: 0.78rem;
-        line-height: 1.45;
+        font-size: 0.72rem; /* optimized for 2-column mobile wrap */
+        line-height: 1.4;
     }
 }
 
@@ -811,12 +812,22 @@ body.preloader-active {
 /* Banner for inner pages */
 .inner-banner {
     height: 40vh;
-    min-height: 300px;
+    min-height: 320px;
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
     align-items: center;
+    padding-top: 120px; /* Push content below floating desktop navbar */
+}
+
+@media (max-width: 991.98px) {
+    .inner-banner {
+        padding-top: 95px; /* Push content below floating mobile navbar */
+        min-height: 280px;
+        height: auto;
+        padding-bottom: 40px; /* Breathing room at bottom */
+    }
 }
 
 .inner-banner::before {
