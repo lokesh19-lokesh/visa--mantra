@@ -388,6 +388,24 @@ body.preloader-active {
     transform: scale(1.1) rotate(5deg);
 }
 
+@media (max-width: 767.98px) {
+    .premium-card {
+        padding: 20px 15px;
+    }
+    .card-icon {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+    }
+    .premium-card h3 {
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+    }
+    .premium-card p {
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+}
+
 /* Stats Counter */
 .stat-item {
     text-align: center;
