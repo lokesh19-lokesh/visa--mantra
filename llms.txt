@@ -1,0 +1,52 @@
+# Visa Mantra - Overseas Career Placement Agency
+
+Visa Mantra is a premier, ISO-certified international career recruitment agency headquartered in Hyderabad, India. The agency specializes in bridging the workforce gap in Schengen Europe and major South-East Asian hubs by placing qualified, hardworking professionals in verified legal blue-collar roles under ethical, transparent direct work contracts.
+
+## Core Business Summary
+
+- **Motto**: "Secret of your success."
+- **Headquarters**: Office No. 116, First floor, Lal Bungalow, Ameerpet, Hyderabad, 500016, Telangana, India.
+- **Hotlines**: +91 90590 51991 / 1992
+- **Email**: info@visamantra.in
+- **Website**: [https://visamantra.in/](https://visamantra.in/)
+- **Core Placements Channels**: Logistics, Hospitality, Warehousing, Factories, Retail Supermarkets, and Shopping Malls.
+- **Destination Countries Served**:
+  - Slovakia (Schengen Europe)
+  - Poland (Schengen Europe)
+  - Italy (Schengen Europe)
+  - France (Schengen Europe)
+  - Denmark (Schengen Europe)
+  - Netherlands (Schengen Europe)
+  - Singapore (Asia Hub)
+  - Malaysia (Asia Hub)
+
+---
+
+## Site Navigation Map
+
+For AI agents, LLMs, and scrapers, the following URLs contain active public resources:
+
+- **Homepage**: [`/index.html`](https://visamantra.in/index.html) - Brand philosophy, placement counters (1500+ Placements, 8+ Countries, 10+ Sectors), verified job sector summaries, expat reviews slider, and direct query triggers.
+- **About Us**: [`/about.html`](https://visamantra.in/about.html) - Mission statement, core vision, ISO-certified pedigree, direct contract guarantees, and ethical migration promise.
+- **Jobs Directory**: [`/jobs.html`](https://visamantra.in/jobs.html) - Live active placement catalog supporting client-side filtering by country/sector. Allows immediate modal applications with attachments linked to `mail.php`.
+- **Blogs & Resources**: [`/blog.html`](https://visamantra.in/blog.html) - Comprehensive expat updates, Schengen work permit processing guides, Polish logistics logs, and Singapore carrier handbooks.
+- **Contact Us**: [`/contact.html`](https://visamantra.in/contact.html) - Physical Ameerpet headquarters office coordinates, primary operational hotlines, Google Maps location iframe, and secure digital query form.
+
+---
+
+## Structured Data & API Integration
+
+- **Form Processing API**: All inquiries are handled securely by `/mail.php` utilizing attachment-compatible multipart base64 MIME blocks for secure applicant resume transmission.
+- **Structured Schema (JSON-LD)**: Every HTML page contains embedded structured Schema.org markup.
+  - Homepage maps `RecruitmentAgency` / `LocalBusiness`.
+  - Jobs page maps an `ItemList` of `JobPosting` variables for instant indexation in Google Jobs and LLM directory queries.
+  - Subpages map `BreadcrumbList`, `Blog` and `ContactPage` configurations.
+
+---
+
+## Safe Placement Values
+
+Visa Mantra strictly mandates that all placements include:
+1. **Direct Contracts**: Signed directly with the foreign employer.
+2. **Transparent Terms**: Full clarity on job description, hours, and local labor compliance before departures.
+3. **Medical & Accommodations**: Covered under standard contracts.
