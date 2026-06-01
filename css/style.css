@@ -463,6 +463,28 @@ body.preloader-active {
     border-radius: 50px;
 }
 
+@media (max-width: 767.98px) {
+    .country-card {
+        height: 220px;
+    }
+    .country-badge {
+        top: 10px;
+        left: 10px;
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+    .country-overlay {
+        padding: 15px;
+    }
+    .country-overlay h4 {
+        font-size: 1.1rem;
+        margin-bottom: 2px !important;
+    }
+    .country-overlay p {
+        font-size: 0.7rem;
+    }
+}
+
 /* Slider Section Titles */
 .section-subtitle {
     color: var(--accent-gold);
