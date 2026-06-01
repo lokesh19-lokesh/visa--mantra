@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Full-screen preloader splash screen
+    const preloader = document.getElementById('preloader');
+    if (preloader && preloader.style.display !== 'none') {
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+            document.body.classList.remove('preloader-active');
+        }, 2000);
+    }
+
     // 1. Navbar Scroll Effect
     const navbar = document.querySelector('.navbar-glass');
     if (navbar) {

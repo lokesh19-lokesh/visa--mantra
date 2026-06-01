@@ -14,6 +14,37 @@
 </head>
 <body>
 
+    <!-- Fullscreen Preloader Splash Screen -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="images/logo.png" alt="Visa Mantra Logo" class="preloader-logo">
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+    <script>
+        (function() {
+            var isReload = false;
+            try {
+                var perfEntries = performance.getEntriesByType('navigation');
+                if (perfEntries.length > 0 && perfEntries[0].type === 'reload') {
+                    isReload = true;
+                }
+            } catch(e) {}
+
+            var preloaderShown = sessionStorage.getItem('home_preloader_shown');
+            var preloader = document.getElementById('preloader');
+            
+            if (preloaderShown && !isReload) {
+                preloader.style.display = 'none';
+                document.body.classList.remove('preloader-active');
+            } else {
+                sessionStorage.setItem('home_preloader_shown', 'true');
+                preloader.style.display = 'flex';
+                document.body.classList.add('preloader-active');
+            }
+        })();
+    </script>
+
     <!-- WhatsApp Floating Action -->
     <a href="https://wa.me/919059051991?text=Hello%20Visa%20Mantra%2C%20I%20am%20interested%20in%20job%20placements%20in%20Europe%2FAsia." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
