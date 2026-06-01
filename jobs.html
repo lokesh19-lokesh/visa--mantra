@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Directory - Visa Mantra | Live Placements in Europe & Asia</title>
+    <meta name="description" content="Browse verified job contracts in France, Italy, Poland, Slovakia, Singapore, and Malaysia. Apply for leading blue collar opportunities with Visa Mantra Hyderabad.">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/919059051991?text=Hello%20Visa%20Mantra%2C%20I%20am%20interested%20in%20job%20placements%20in%20Europe%2FAsia." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Enquire Now Slide-out Trigger -->
+    <div class="sidebar-contact-trigger" id="openDrawerBtn">
+        Enquire Now
+    </div>
+
+    <!-- Slide-out Drawer Panel Overlay -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Slide-out Drawer Form Panel -->
+    <div class="drawer-content" id="drawerContent">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="mb-0" style="color: var(--accent-gold);">Connect With Us</h3>
+            <span class="drawer-close" id="closeDrawerBtn"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <p class="text-muted small mb-4">Leave your details and our senior recruitment consultants will contact you directly to discuss overseas positions.</p>
+        
+        <form action="mail.php" method="POST">
+            <input type="hidden" name="form_source" value="drawer_popup">
+            <div class="mb-3">
+                <label class="form-label text-light small">Full Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light small">Phone Number</label>
+                <input type="tel" name="phone" class="form-control" placeholder="Contact Number" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light small">Email Address</label>
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light small">Preferred Sector</label>
+                <select name="sector" class="form-select" required>
+                    <option value="" disabled selected>Select Industry</option>
+                    <option value="Hotels">Hotels & Restaurants</option>
+                    <option value="Factories">Factories & Production</option>
+                    <option value="Warehouse">Warehouse & Logistics</option>
+                    <option value="Super Markets">Super Markets & Retail</option>
+                    <option value="Deliveries">Deliveries & Transport</option>
+                    <option value="Foreman">Foreman / Construction</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light small">Preferred Region</label>
+                <select name="destination" class="form-select" required>
+                    <option value="" disabled selected>Select Destination</option>
+                    <option value="Europe">Europe (France, Poland, Slovakia, etc.)</option>
+                    <option value="Asia">Asia (Singapore, Malaysia)</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="form-label text-light small">Your Inquiry Message</label>
+                <textarea name="message" class="form-control" rows="4" placeholder="Tell us about your work experience..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold w-100">Submit Details</button>
+        </form>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="footer-logo">
+                    V<span style="color: var(--accent-gold);">M</span> <span class="fw-light small fs-5" style="letter-spacing: 1px; color: #fff;">VISA MANTRA</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="jobs.html">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="text-light small fw-bold d-none d-xl-inline"><i class="fa-solid fa-phone text-gold me-2" style="color: var(--accent-gold);"></i>905 905 1991</span>
+                    <a href="jobs.html" class="btn btn-gold py-2 px-3 fs-6 trigger-drawer-form">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inner page Header Banner -->
+    <section class="inner-banner" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop');">
+        <div class="container inner-banner-content">
+            <div class="col-lg-8">
+                <span class="section-subtitle">Live Placements</span>
+                <h1 class="display-4 fw-bold">Jobs Directory</h1>
+                <p class="text-muted fs-5">Browse our active direct placement vacancies across leading European Schengen countries and major Asian centers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Board Directory -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Active Contracts</span>
+                <h2 class="section-title">Live Vacancies</h2>
+                
+                <!-- Client side dynamic filtration buttons -->
+                <div class="d-flex justify-content-center flex-wrap mt-4" style="gap: 5px;">
+                    <button class="filter-btn active animate__animated animate__fadeIn" data-filter="all">Show All</button>
+                    <button class="filter-btn" data-filter="Slovakia">Slovakia</button>
+                    <button class="filter-btn" data-filter="Poland">Poland</button>
+                    <button class="filter-btn" data-filter="France">France</button>
+                    <button class="filter-btn" data-filter="Italy">Italy</button>
+                    <button class="filter-btn" data-filter="Singapore">Singapore</button>
+                    <button class="filter-btn" data-filter="Malaysia">Malaysia</button>
+                    <button class="filter-btn" data-filter="Hotels">Hotels & F&B</button>
+                    <button class="filter-btn" data-filter="Factories">Factories</button>
+                    <button class="filter-btn" data-filter="Warehouse">Warehouse</button>
+                </div>
+            </div>
+
+            <!-- Job cards row -->
+            <div class="row g-4" id="jobsGrid">
+                <!-- Card 1: Slovakia Warehouse -->
+                <div class="col-lg-4 col-md-6 job-item-card" data-country="Slovakia" data-sector="Warehouse">
+                    <div class="premium-card d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-gold" style="background-color: var(--accent-gold); color: var(--primary-dark);">Schengen Europe</span>
+                                <span class="text-gold fw-bold" style="color: var(--accent-gold);">€1,100 / mo</span>
+                            </div>
+                            <h3>Warehouse Operator</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot me-2 text-gold" style="color: var(--accent-gold);"></i>Bratislava, Slovakia</p>
+                            <p class="text-muted small">Verified warehouse logistics packer contract. Responsibilities include barcodes scanning, package sorting, and inventory management.</p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Age: 18 - 45 Years</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Free Medical & Insurance</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Accommodation Included</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-gold w-100 mt-3" data-bs-toggle="modal" data-bs-target="#applyJobModal" data-job-title="Warehouse Operator" data-job-destination="Slovakia">Apply For This Job</button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Poland Factory -->
+                <div class="col-lg-4 col-md-6 job-item-card" data-country="Poland" data-sector="Factories">
+                    <div class="premium-card d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-gold" style="background-color: var(--accent-gold); color: var(--primary-dark);">Schengen Europe</span>
+                                <span class="text-gold fw-bold" style="color: var(--accent-gold);">€950 / mo</span>
+                            </div>
+                            <h3>Factory Assembly Line</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot me-2 text-gold" style="color: var(--accent-gold);"></i>Wrocław, Poland</p>
+                            <p class="text-muted small">Direct placement with verified European manufacturers. Handling assembly components, electronics, and standard packaging.</p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>8 - 12 Hour Shifts</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Overtime Bonuses Available</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Free Shared Housing</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-gold w-100 mt-3" data-bs-toggle="modal" data-bs-target="#applyJobModal" data-job-title="Factory Assembly Line" data-job-destination="Poland">Apply For This Job</button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Italy F&B Service -->
+                <div class="col-lg-4 col-md-6 job-item-card" data-country="Italy" data-sector="Hotels">
+                    <div class="premium-card d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-gold" style="background-color: var(--accent-gold); color: var(--primary-dark);">Schengen Europe</span>
+                                <span class="text-gold fw-bold" style="color: var(--accent-gold);">€1,200 / mo</span>
+                            </div>
+                            <h3>Assistant Kitchen Chef</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot me-2 text-gold" style="color: var(--accent-gold);"></i>Milan, Italy</p>
+                            <p class="text-muted small">High-end Italian dining chains. Preparing raw food components, keeping strict sanitation standards, and kitchen inventory.</p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Food Provided on Shift</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Schengen Contract Terms</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Basic English or Italian helpful</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-gold w-100 mt-3" data-bs-toggle="modal" data-bs-target="#applyJobModal" data-job-title="Assistant Kitchen Chef" data-job-destination="Italy">Apply For This Job</button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Singapore Supermarket -->
+                <div class="col-lg-4 col-md-6 job-item-card" data-country="Singapore" data-sector="Warehouse">
+                    <div class="premium-card d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-gold" style="background-color: var(--accent-gold); color: var(--primary-dark);">Asia Hub</span>
+                                <span class="text-gold fw-bold" style="color: var(--accent-gold);">$1,400 SGD / mo</span>
+                            </div>
+                            <h3>Store Supervisor</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot me-2 text-gold" style="color: var(--accent-gold);"></i>Jurong, Singapore</p>
+                            <p class="text-muted small">Positions in high-end supermarkets and stores. Inventory control, shelf stocking, pricing management, and receipt supervision.</p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Singapore S-Pass / Work Permit</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Annual Paid Leaves</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Free Medical Care</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-gold w-100 mt-3" data-bs-toggle="modal" data-bs-target="#applyJobModal" data-job-title="Store Supervisor" data-job-destination="Singapore">Apply For This Job</button>
+                    </div>
+                </div>
+
+                <!-- Card 5: France Deliveries -->
+                <div class="col-lg-4 col-md-6 job-item-card" data-country="France" data-sector="Hotels">
+                    <div class="premium-card d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-gold" style="background-color: var(--accent-gold); color: var(--primary-dark);">Schengen Europe</span>
+                                <span class="text-gold fw-bold" style="color: var(--accent-gold);">€1,300 / mo</span>
+                            </div>
+                            <h3>Food Delivery Driver</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot me-2 text-gold" style="color: var(--accent-gold);"></i>Paris, France</p>
+                            <p class="text-muted small">Deliver food and retail orders using company e-bikes or scooters. Strict adherence to city route guidance and on-time drops.</p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>License Provided/Mapped</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Bicycle Provided</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Tips fully retained by Rider</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-gold w-100 mt-3" data-bs-toggle="modal" data-bs-target="#applyJobModal" data-job-title="Food Delivery Driver" data-job-destination="France">Apply For This Job</button>
+                    </div>
+                </div>
+
+                <!-- Card 6: Malaysia Construction -->
+                <div class="col-lg-4 col-md-6 job-item-card" data-country="Malaysia" data-sector="Factories">
+                    <div class="premium-card d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-gold" style="background-color: var(--accent-gold); color: var(--primary-dark);">Asia Hub</span>
+                                <span class="text-gold fw-bold" style="color: var(--accent-gold);">RM 3,200 / mo</span>
+                            </div>
+                            <h3>Construction Foreman</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot me-2 text-gold" style="color: var(--accent-gold);"></i>Kuala Lumpur, Malaysia</p>
+                            <p class="text-muted small">Fulfill role as supervisor for structural builders. Layout planning, shift timings allocation, and safety enforcement.</p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>3+ Years Experience Required</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Free Medical & Travel Allowances</li>
+                                <li><i class="fa-solid fa-check text-gold me-2" style="color: var(--accent-gold);"></i>Work Visa Fully Paid</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-gold w-100 mt-3" data-bs-toggle="modal" data-bs-target="#applyJobModal" data-job-title="Construction Foreman" data-job-destination="Malaysia">Apply For This Job</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Bootstrap Modal Component -->
+    <div class="modal fade" id="applyJobModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: var(--primary-slate); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="modal-header border-0 pb-0">
+                    <h4 class="modal-title" style="color: var(--accent-gold);">Apply for Position</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <form action="mail.php" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="form_source" value="job_application">
+                        
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Selected Position</label>
+                            <input type="text" name="applied_position" id="modalJobTitle" class="form-control" readonly>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Target Destination</label>
+                            <input type="text" name="applied_destination" id="modalJobDestination" class="form-control" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Full Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Phone / Mobile</label>
+                            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Email Address</label>
+                            <input type="email" name="email" class="form-control" placeholder="Your Email Address" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Upload CV / Resume (PDF / Doc)</label>
+                            <input type="file" name="resume" class="form-control" accept=".pdf,.doc,.docx" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label text-light small">Work Experience Overview</label>
+                            <textarea name="experience" class="form-control" rows="3" placeholder="Tell us about your past jobs..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold w-100">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+    <footer class="py-5" style="background-color: var(--primary-dark); border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo mb-3">
+                        V<span style="color: var(--accent-gold);">M</span> <span class="fw-light small fs-5" style="letter-spacing: 1px; color: #fff;">VISA MANTRA</span>
+                    </div>
+                    <p class="text-muted small mb-4">Experts in matching energetic Indian workers to verified blue collar placements in European and Asian hubs. Secret of your success.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-twitter text-light"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-linkedin-in text-light"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-instagram text-light"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-section-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="jobs.html" class="footer-link">Jobs Listing</a></li>
+                        <li><a href="blog.html" class="footer-link">Latest Blog</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-section-title">Top Countries</h5>
+                    <ul class="list-unstyled row g-0">
+                        <div class="col-6">
+                            <li><a href="jobs.html" class="footer-link">France</a></li>
+                            <li><a href="jobs.html" class="footer-link">Slovakia</a></li>
+                            <li><a href="jobs.html" class="footer-link">Italy</a></li>
+                            <li><a href="jobs.html" class="footer-link">Poland</a></li>
+                        </div>
+                        <div class="col-6">
+                            <li><a href="jobs.html" class="footer-link">Denmark</a></li>
+                            <li><a href="jobs.html" class="footer-link">Netherlands</a></li>
+                            <li><a href="jobs.html" class="footer-link">Singapore</a></li>
+                            <li><a href="jobs.html" class="footer-link">Malaysia</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-section-title">Contact Directory</h5>
+                    <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot me-2 text-gold" style="color: var(--accent-gold);"></i>Office 116, Lal Bungalow, Ameerpet, Hyderabad 500016</p>
+                    <p class="text-muted small mb-2"><i class="fa-solid fa-phone me-2 text-gold" style="color: var(--accent-gold);"></i>+91 90590 51991 / 1992</p>
+                    <p class="text-muted small"><i class="fa-solid fa-envelope me-2 text-gold" style="color: var(--accent-gold);"></i>info@visamantra.in</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.08);">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 text-muted small">
+                <span>© 2026 Visa Mantra. All Rights Reserved.</span>
+                <span>Designed for Premium Career Placements.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom main.js -->
+    <script src="js/main.js"></script>
+</body>
+</html>

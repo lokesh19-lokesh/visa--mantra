@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Mantra - Experts in European & Asian Blue Collar Placements</title>
+    <meta name="description" content="Visa Mantra, located in Hyderabad, is a premier career placement agency specializing in safe, legal blue collar jobs across France, Slovakia, Italy, Poland, Singapore, and Malaysia. Secret of your success.">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/919059051991?text=Hello%20Visa%20Mantra%2C%20I%20am%20interested%20in%20job%20placements%20in%20Europe%2FAsia." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Enquire Now Slide-out Trigger -->
+    <div class="sidebar-contact-trigger" id="openDrawerBtn">
+        Enquire Now
+    </div>
+
+    <!-- Slide-out Drawer Panel Overlay -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Slide-out Drawer Form Panel -->
+    <div class="drawer-content" id="drawerContent">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="mb-0" style="color: var(--accent-gold);">Connect With Us</h3>
+            <span class="drawer-close" id="closeDrawerBtn"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <p class="text-muted small mb-4">Leave your details and our senior recruitment consultants will contact you directly to discuss overseas positions.</p>
+        
+        <form action="mail.php" method="POST">
+            <input type="hidden" name="form_source" value="drawer_popup">
+            <div class="mb-3">
+                <label class="form-label text-light small">Full Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light small">Phone Number</label>
+                <input type="tel" name="phone" class="form-control" placeholder="Contact Number" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light small">Email Address</label>
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light small">Preferred Sector</label>
+                <select name="sector" class="form-select" required>
+                    <option value="" disabled selected>Select Industry</option>
+                    <option value="Hotels">Hotels & Restaurants</option>
+                    <option value="Factories">Factories & Production</option>
+                    <option value="Warehouse">Warehouse & Logistics</option>
+                    <option value="Super Markets">Super Markets & Retail</option>
+                    <option value="Deliveries">Deliveries & Transport</option>
+                    <option value="Foreman">Foreman / Construction</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light small">Preferred Region</label>
+                <select name="destination" class="form-select" required>
+                    <option value="" disabled selected>Select Destination</option>
+                    <option value="Europe">Europe (France, Poland, Slovakia, etc.)</option>
+                    <option value="Asia">Asia (Singapore, Malaysia)</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="form-label text-light small">Your Inquiry Message</label>
+                <textarea name="message" class="form-control" rows="4" placeholder="Tell us about your work experience..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold w-100">Submit Details</button>
+        </form>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="footer-logo">
+                    V<span style="color: var(--accent-gold);">M</span> <span class="fw-light small fs-5" style="letter-spacing: 1px; color: #fff;">VISA MANTRA</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="text-light small fw-bold d-none d-xl-inline"><i class="fa-solid fa-phone text-gold me-2" style="color: var(--accent-gold);"></i>905 905 1991</span>
+                    <a href="jobs.html" class="btn btn-gold py-2 px-3 fs-6 trigger-drawer-form">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Slider -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active hero-slider-item" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop');">
+                <div class="container h-100">
+                    <div class="hero-content-wrap col-lg-8">
+                        <div class="hero-slogan">Secret of your success</div>
+                        <h1 class="display-3 fw-bold mb-3">Your Gateway to Legal Jobs in Europe & Asia</h1>
+                        <p class="fs-5 text-muted mb-4">Visa Mantra matches skilled professionals and blue collar workers from India to high-paying jobs in France, Slovakia, Italy, Poland, Malaysia, and Singapore.</p>
+                        <div class="d-flex gap-3">
+                            <a href="jobs.html" class="btn btn-gold">Explore Jobs</a>
+                            <a href="#" class="btn btn-outline-gold trigger-drawer-form">Consult Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item hero-slider-item" style="background-image: url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop');">
+                <div class="container h-100">
+                    <div class="hero-content-wrap col-lg-8">
+                        <div class="hero-slogan">Direct Placements</div>
+                        <h1 class="display-3 fw-bold mb-3">Experts in Factory & Warehouse Careers</h1>
+                        <p class="fs-5 text-muted mb-4">Fulfill your dreams of working in Poland, Slovakia, and the Netherlands. Secure stable contracts with verified employers in factory operations and warehouse management.</p>
+                        <div class="d-flex gap-3">
+                            <a href="jobs.html" class="btn btn-gold">Jobs in Europe</a>
+                            <a href="#" class="btn btn-outline-gold trigger-drawer-form">Register Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item hero-slider-item" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop');">
+                <div class="container h-100">
+                    <div class="hero-content-wrap col-lg-8">
+                        <div class="hero-slogan">Hospitality Placements</div>
+                        <h1 class="display-3 fw-bold mb-3">World Class Hotel & Restaurant Careers</h1>
+                        <p class="fs-5 text-muted mb-4">Step into luxury hotels and high-end restaurant chains in France, Italy, Singapore, and Denmark. Safe, legal, and rewarding international career pathways.</p>
+                        <div class="d-flex gap-3">
+                            <a href="jobs.html" class="btn btn-gold">Hospitality Roles</a>
+                            <a href="#" class="btn btn-outline-gold trigger-drawer-form">Submit Query</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Statistics Section -->
+    <section class="py-5" id="statsSection" style="background-color: var(--primary-slate);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+                    <h5 class="text-gold uppercase" style="color: var(--accent-gold);">VISA MANTRA</h5>
+                    <h2 class="fw-bold mb-0">Milestones in Numbers</h2>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 stat-item">
+                            <div class="stat-number" data-target="1500">0+</div>
+                            <p class="text-muted mb-0">Legal Placements</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 stat-item">
+                            <div class="stat-number" data-target="8">0+</div>
+                            <p class="text-muted mb-0">Destinations Serviced</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 stat-item">
+                            <div class="stat-number" data-target="10">0+</div>
+                            <p class="text-muted mb-0">Professional Sectors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="section-subtitle">Secret of your success</span>
+                    <h2 class="section-title left-aligned">Welcome to Visa Mantra Placements</h2>
+                    <p class="text-muted fs-6 mb-4">At Visa Mantra, we understand that migration is a massive step towards a better life. Guided by our motto, "Secret of your success," we specialize in mapping qualified and energetic blue collar professionals from India to life-changing career placements across premium international destinations.</p>
+                    <p class="text-muted fs-6 mb-4">We are experts in navigating the legal employment rules of Schengen countries and leading Asian economies. From visa processing to pre-departure training, our dedicated team based in Hyderabad handles all operations with supreme safety, speed, and integrity.</p>
+                    <a href="about.html" class="btn btn-gold">Read More About Us</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative overflow-hidden rounded-3 shadow">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b90473bd58?q=80&w=1974&auto=format&fit=crop" alt="Visa Mantra Team" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Countries Grid -->
+    <section class="py-5" style="background-color: var(--primary-slate);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Overseas Placements</span>
+                <h2 class="section-title">Destinations We Serve</h2>
+                <p class="text-muted max-width-600 mx-auto">Explore high-paying direct contract employment opportunities in Europe's strongest economies and Asia's primary commercial hubs.</p>
+            </div>
+            <div class="row g-4">
+                <!-- France -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="country-card" onclick="location.href='jobs.html'">
+                        <span class="country-badge">Schengen Europe</span>
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2073&auto=format&fit=crop" class="country-img" alt="Jobs in France">
+                        <div class="country-overlay">
+                            <h4 class="mb-1">France</h4>
+                            <p class="text-muted small mb-0">Hotels, Restaurants, & Deliveries</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slovakia -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="country-card" onclick="location.href='jobs.html'">
+                        <span class="country-badge">Schengen Europe</span>
+                        <img src="https://images.unsplash.com/photo-1562956903-a128859a5317?q=80&w=2070&auto=format&fit=crop" class="country-img" alt="Jobs in Slovakia">
+                        <div class="country-overlay">
+                            <h4 class="mb-1">Slovakia</h4>
+                            <p class="text-muted small mb-0">Factories, Warehouse & Forex</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Italy -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="country-card" onclick="location.href='jobs.html'">
+                        <span class="country-badge">Schengen Europe</span>
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" class="country-img" alt="Jobs in Italy">
+                        <div class="country-overlay">
+                            <h4 class="mb-1">Italy</h4>
+                            <p class="text-muted small mb-0">Restaurants & Stores Placement</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Poland -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="country-card" onclick="location.href='jobs.html'">
+                        <span class="country-badge">Schengen Europe</span>
+                        <img src="https://images.unsplash.com/photo-1519197924294-4ba991a11128?q=80&w=2065&auto=format&fit=crop" class="country-img" alt="Jobs in Poland">
+                        <div class="country-overlay">
+                            <h4 class="mb-1">Poland</h4>
+                            <p class="text-muted small mb-0">Factory Staff, Warehouse Workers</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Netherlands -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="country-card" onclick="location.href='jobs.html'">
+                        <span class="country-badge">Schengen Europe</span>
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop" class="country-img" alt="Jobs in Netherlands">
+                        <div class="country-overlay">
+                            <h4 class="mb-1">Netherlands</h4>
+                            <p class="text-muted small mb-0">Warehouse & Logistics Placements</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Denmark -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="country-card" onclick="location.href='jobs.html'">
+                        <span class="country-badge">Schengen Europe</span>
+                        <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?q=80&w=2070&auto=format&fit=crop" class="country-img" alt="Jobs in Denmark">
+                        <div class="country-overlay">
+                            <h4 class="mb-1">Denmark</h4>
+                            <p class="text-muted small mb-0">Farming & Food Outlets Staff</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Singapore -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="country-card" onclick="location.href='jobs.html'">
+                        <span class="country-badge">Asia Hub</span>
+                        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1952&auto=format&fit=crop" class="country-img" alt="Jobs in Singapore">
+                        <div class="country-overlay">
+                            <h4 class="mb-1">Singapore</h4>
+                            <p class="text-muted small mb-0">Hotel Staffing, Warehouse, Retail</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Malaysia -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="country-card" onclick="location.href='jobs.html'">
+                        <span class="country-badge">Asia Hub</span>
+                        <img src="https://images.unsplash.com/photo-1596422846543-75c6fc1f7f43?q=80&w=2070&auto=format&fit=crop" class="country-img" alt="Jobs in Malaysia">
+                        <div class="country-overlay">
+                            <h4 class="mb-1">Malaysia</h4>
+                            <p class="text-muted small mb-0">Super Markets, Malls, & Construction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors & Industries Grid -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Industries We Serve</span>
+                <h2 class="section-title">Verified Job Sectors</h2>
+                <p class="text-muted max-width-600 mx-auto">We provide direct recruitment contracts across multiple diverse manual, hospitality, and retail channels.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Hotels -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-hotel card-icon"></i>
+                        <h3>Hotels</h3>
+                        <p class="text-muted mb-0">Kitchen assistants, cleaning specialists, and backend operational staff for leading hospitality brands across Europe & Singapore.</p>
+                    </div>
+                </div>
+                <!-- Restaurants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-utensils card-icon"></i>
+                        <h3>Restaurants</h3>
+                        <p class="text-muted mb-0">Direct job pathways in global dining groups, F&B service networks, and upscale fast food units.</p>
+                    </div>
+                </div>
+                <!-- Factories -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-industry card-icon"></i>
+                        <h3>Factories</h3>
+                        <p class="text-muted mb-0">Manufacturing assembly line operators, machinery handlers, and packers in Slovakia, Poland, and Malaysia.</p>
+                    </div>
+                </div>
+                <!-- Foreman -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-helmet-safety card-icon"></i>
+                        <h3>Foreman / Construction</h3>
+                        <p class="text-muted mb-0">Skilled site supervisors, foreman roles, and structural personnel for premium developers in Malaysia.</p>
+                    </div>
+                </div>
+                <!-- Warehouse -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-warehouse card-icon"></i>
+                        <h3>Warehouse</h3>
+                        <p class="text-muted mb-0">Inventory keepers, order packers, barcode scanning teams, and forklift operators in Polish and Slovakian hubs.</p>
+                    </div>
+                </div>
+                <!-- Super Markets -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-cart-shopping card-icon"></i>
+                        <h3>Super Markets</h3>
+                        <p class="text-muted mb-0">Stocking, operational supervisors, and customer support representatives across Poland and Denmark supermarkets.</p>
+                    </div>
+                </div>
+                <!-- Stores -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-shop card-icon"></i>
+                        <h3>Stores</h3>
+                        <p class="text-muted mb-0">Cashiers, retail assistants, and stock controllers for global consumer outlets.</p>
+                    </div>
+                </div>
+                <!-- Deliveries -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-truck-ramp-box card-icon"></i>
+                        <h3>Deliveries</h3>
+                        <p class="text-muted mb-0">Logistics dispatch drivers, fast food transit operators, and supply chain drivers in European capitals.</p>
+                    </div>
+                </div>
+                <!-- Shopping Malls -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="premium-card">
+                        <i class="fa-solid fa-bag-shopping card-icon"></i>
+                        <h3>Shopping Malls</h3>
+                        <p class="text-muted mb-0">Department store associates, safety floor coordinators, and dynamic service personnel in Singapore & Malaysia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials deck -->
+    <section class="py-5" style="background-color: var(--primary-slate);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Expat Reviews</span>
+                <h2 class="section-title">Success Stories</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <p class="text-muted fs-6 mb-4">"Securing my contract as a warehouse manager in Slovakia was incredibly simple. The Hyderabad team at Visa Mantra handled all visa file submissions. Today I have a stable job and a wonderful home. Highly recommended!"</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" class="client-portrait" alt="Ramesh Rao">
+                            <div>
+                                <h5 class="mb-0">Ramesh Rao</h5>
+                                <p class="text-gold mb-0 small" style="color: var(--accent-gold);">Warehouse Operator, Slovakia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <p class="text-muted fs-6 mb-4">"Visa Mantra maps absolute transparency. They explained all Schengen contract parameters, costs, and terms. I am currently working as a kitchen assistant in Milan, Italy. They are the true secret of my success."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" class="client-portrait" alt="Mohammed Ali">
+                            <div>
+                                <h5 class="mb-0">Mohammed Ali</h5>
+                                <p class="text-gold mb-0 small" style="color: var(--accent-gold);">F&B Kitchen Assistant, Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Query Block -->
+    <section class="py-5 text-center my-4">
+        <div class="container">
+            <div class="form-glass p-5 col-lg-10 mx-auto">
+                <h2 class="fw-bold mb-3">Begin Your International Career Journey</h2>
+                <p class="text-muted mb-4 max-width-600 mx-auto">Our specialized recruitment managers are ready to assist you. Reach out now to find standard legal contracts in Europe and Asia.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="contact.html" class="btn btn-gold px-4 py-3">Get in Touch</a>
+                    <a href="#" class="btn btn-outline-gold px-4 py-3 trigger-drawer-form">Submit Quick Query</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <footer class="py-5" style="background-color: var(--primary-dark); border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo mb-3">
+                        V<span style="color: var(--accent-gold);">M</span> <span class="fw-light small fs-5" style="letter-spacing: 1px; color: #fff;">VISA MANTRA</span>
+                    </div>
+                    <p class="text-muted small mb-4">Experts in matching energetic Indian workers to verified blue collar placements in European and Asian hubs. Secret of your success.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-twitter text-light"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-linkedin-in text-light"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-instagram text-light"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-section-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="jobs.html" class="footer-link">Jobs Listing</a></li>
+                        <li><a href="blog.html" class="footer-link">Latest Blog</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-section-title">Top Countries</h5>
+                    <ul class="list-unstyled row g-0">
+                        <div class="col-6">
+                            <li><a href="jobs.html" class="footer-link">France</a></li>
+                            <li><a href="jobs.html" class="footer-link">Slovakia</a></li>
+                            <li><a href="jobs.html" class="footer-link">Italy</a></li>
+                            <li><a href="jobs.html" class="footer-link">Poland</a></li>
+                        </div>
+                        <div class="col-6">
+                            <li><a href="jobs.html" class="footer-link">Denmark</a></li>
+                            <li><a href="jobs.html" class="footer-link">Netherlands</a></li>
+                            <li><a href="jobs.html" class="footer-link">Singapore</a></li>
+                            <li><a href="jobs.html" class="footer-link">Malaysia</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-section-title">Contact Directory</h5>
+                    <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot me-2 text-gold" style="color: var(--accent-gold);"></i>Office 116, Lal Bungalow, Ameerpet, Hyderabad 500016</p>
+                    <p class="text-muted small mb-2"><i class="fa-solid fa-phone me-2 text-gold" style="color: var(--accent-gold);"></i>+91 90590 51991 / 1992</p>
+                    <p class="text-muted small"><i class="fa-solid fa-envelope me-2 text-gold" style="color: var(--accent-gold);"></i>info@visamantra.in</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.08);">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 text-muted small">
+                <span>© 2026 Visa Mantra. All Rights Reserved.</span>
+                <span>Designed for Premium Career Placements.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom main.js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
