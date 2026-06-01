@@ -96,7 +96,7 @@ h6,
 }
 
 .preloader-logo {
-    height: 120px;
+    height: 220px;
     width: auto;
     animation: logoIntro 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
