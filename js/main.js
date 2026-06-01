@@ -143,4 +143,43 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 6. The Bubbles Media Floating Hover Animation
+    const bubbleLinks = document.querySelectorAll('.bubbles-hover-link');
+    bubbleLinks.forEach(link => {
+        let intervalId = null;
+        
+        const createBubble = () => {
+            const bubble = document.createElement('span');
+            bubble.classList.add('bubble-effect');
+            
+            const size = Math.random() * 8 + 4;
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            
+            const leftOffset = Math.random() * link.offsetWidth;
+            bubble.style.left = `${leftOffset}px`;
+            
+            const drift = (Math.random() * 30 - 15);
+            bubble.style.setProperty('--bubble-drift', `${drift}px`);
+            
+            link.appendChild(bubble);
+            
+            setTimeout(() => {
+                bubble.remove();
+            }, 1200);
+        };
+
+        link.addEventListener('mouseenter', () => {
+            createBubble();
+            intervalId = setInterval(createBubble, 120);
+        });
+
+        link.addEventListener('mouseleave', () => {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        });
+    });
 });
