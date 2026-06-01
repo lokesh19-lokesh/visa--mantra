@@ -423,36 +423,81 @@
     </section>
 
     <!-- Testimonials deck -->
-    <section class="py-5" style="background-color: var(--primary-slate);">
+    <section class="py-5" style="background-color: var(--primary-slate); position: relative; overflow: hidden;">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-subtitle">Expat Reviews</span>
                 <h2 class="section-title">Success Stories</h2>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <p class="text-muted fs-6 mb-4">"Securing my contract as a warehouse manager in Slovakia was incredibly simple. The Hyderabad team at Visa Mantra handled all visa file submissions. Today I have a stable job and a wonderful home. Highly recommended!"</p>
-                        <div class="d-flex align-items-center gap-3">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" class="client-portrait" alt="Ramesh Rao">
-                            <div>
-                                <h5 class="mb-0">Ramesh Rao</h5>
-                                <p class="text-gold mb-0 small" style="color: var(--accent-gold);">Warehouse Operator, Slovakia</p>
+            
+            <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="col-lg-8 mx-auto px-4">
+                            <div class="testimonial-card">
+                                <p class="text-muted fs-6 mb-4">"Securing my contract as a warehouse manager in Slovakia was incredibly simple. The Hyderabad team at Visa Mantra handled all visa file submissions. Today I have a stable job and a wonderful home. Highly recommended!"</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" class="client-portrait" alt="Ramesh Rao">
+                                    <div>
+                                        <h5 class="mb-0">Ramesh Rao</h5>
+                                        <p class="text-gold mb-0 small" style="color: var(--accent-gold);">Warehouse Operator, Slovakia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="col-lg-8 mx-auto px-4">
+                            <div class="testimonial-card">
+                                <p class="text-muted fs-6 mb-4">"Visa Mantra maps absolute transparency. They explained all Schengen contract parameters, costs, and terms. I am currently working as a kitchen assistant in Milan, Italy. They are the true secret of my success."</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" class="client-portrait" alt="Mohammed Ali">
+                                    <div>
+                                        <h5 class="mb-0">Mohammed Ali</h5>
+                                        <p class="text-gold mb-0 small" style="color: var(--accent-gold);">F&B Kitchen Assistant, Italy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="col-lg-8 mx-auto px-4">
+                            <div class="testimonial-card">
+                                <p class="text-muted fs-6 mb-4">"Securing my position in Singapore through Visa Mantra was the best decision of my career. The document compilation was flawless and their pre-departure guidance was top-notch. I love my role!"</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop" class="client-portrait" alt="Priya Sharma">
+                                    <div>
+                                        <h5 class="mb-0">Priya Sharma</h5>
+                                        <p class="text-gold mb-0 small" style="color: var(--accent-gold);">Front Office Associate, Singapore</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <p class="text-muted fs-6 mb-4">"Visa Mantra maps absolute transparency. They explained all Schengen contract parameters, costs, and terms. I am currently working as a kitchen assistant in Milan, Italy. They are the true secret of my success."</p>
-                        <div class="d-flex align-items-center gap-3">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" class="client-portrait" alt="Mohammed Ali">
-                            <div>
-                                <h5 class="mb-0">Mohammed Ali</h5>
-                                <p class="text-gold mb-0 small" style="color: var(--accent-gold);">F&B Kitchen Assistant, Italy</p>
-                            </div>
-                        </div>
-                    </div>
+
+                <!-- Navigation Controls -->
+                <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-custom-icon" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-custom-icon" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <!-- Custom Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
             </div>
         </div>
