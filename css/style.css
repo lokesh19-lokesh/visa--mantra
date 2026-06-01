@@ -767,3 +767,13 @@ body.preloader-active {
         opacity: 0;
     }
 }
+
+/* Welcome Image Lift & Glow */
+.premium-img-card {
+    transition: var(--transition-smooth);
+}
+
+.premium-img-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(197, 168, 92, 0.18) !important;
+}
