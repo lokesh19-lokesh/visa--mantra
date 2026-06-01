@@ -399,6 +399,16 @@ body.preloader-active {
     font-weight: 800;
     color: var(--accent-gold);
     font-family: 'Aileron', sans-serif;
+    transition: var(--transition-smooth);
+}
+
+@media (max-width: 767.98px) {
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    .stat-item {
+        padding: 10px;
+    }
 }
 
 /* Country Placement Card */
