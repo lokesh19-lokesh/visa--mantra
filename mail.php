@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
 
     // Set email headers
-    $headers = "From: Careers The Visa Mantra <no-reply@visamantra.in>\r\n";
+    $headers = "From: Careers The Visa Mantra <no-reply@thevisamantra.com>\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: multipart/mixed; boundary=\"{$mime_boundary}\"\r\n";

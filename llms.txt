@@ -8,7 +8,7 @@ The Visa Mantra is a premier, ISO-certified international career recruitment age
 - **Headquarters**: Office No. 116, First floor, Pillar number C1431, Lal Bungalow, Ameerpet, Hyderabad 500016, Telangana, India.
 - **Hotlines**: 905 905 1991/1992
 - **Email**: info.Thevisamantra@gmail.com
-- **Website**: [https://visamantra.in/](https://visamantra.in/)
+- **Website**: [https://thevisamantra.com/](https://thevisamantra.com/)
 - **Core Placements Channels**: Logistics, Hospitality, Warehousing, Factories, Retail Supermarkets, and Shopping Malls.
 - **Destination Countries Served**:
   - Slovakia (Schengen Europe)
@@ -26,11 +26,11 @@ The Visa Mantra is a premier, ISO-certified international career recruitment age
 
 For AI agents, LLMs, and scrapers, the following URLs contain active public resources:
 
-- **Homepage**: [`/index.html`](https://visamantra.in/index.html) - Brand philosophy, placement counters (1500+ Placements, 8+ Countries, 10+ Sectors), verified job sector summaries, expat reviews slider, and direct query triggers.
-- **About Us**: [`/about.html`](https://visamantra.in/about.html) - Mission statement, core vision, ISO-certified pedigree, direct contract guarantees, and ethical migration promise.
-- **Jobs Directory**: [`/jobs.html`](https://visamantra.in/jobs.html) - Live active placement catalog supporting client-side filtering by country/sector. Allows immediate modal applications with attachments linked to `mail.php`.
-- **Blogs & Resources**: [`/blog.html`](https://visamantra.in/blog.html) - Comprehensive expat updates, Schengen work permit processing guides, Polish logistics logs, and Singapore carrier handbooks.
-- **Contact Us**: [`/contact.html`](https://visamantra.in/contact.html) - Physical Ameerpet headquarters office coordinates, primary operational hotlines, Google Maps location iframe, and secure digital query form.
+- **Homepage**: [`/index.html`](https://thevisamantra.com/index.html) - Brand philosophy, placement counters (1500+ Placements, 8+ Countries, 10+ Sectors), verified job sector summaries, expat reviews slider, and direct query triggers.
+- **About Us**: [`/about.html`](https://thevisamantra.com/about.html) - Mission statement, core vision, ISO-certified pedigree, direct contract guarantees, and ethical migration promise.
+- **Jobs Directory**: [`/jobs.html`](https://thevisamantra.com/jobs.html) - Live active placement catalog supporting client-side filtering by country/sector. Allows immediate modal applications with attachments linked to `mail.php`.
+- **Blogs & Resources**: [`/blog.html`](https://thevisamantra.com/blog.html) - Comprehensive expat updates, Schengen work permit processing guides, Polish logistics logs, and Singapore carrier handbooks.
+- **Contact Us**: [`/contact.html`](https://thevisamantra.com/contact.html) - Physical Ameerpet headquarters office coordinates, primary operational hotlines, Google Maps location iframe, and secure digital query form.
 
 ---
 

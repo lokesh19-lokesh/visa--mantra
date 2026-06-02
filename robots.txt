@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://visamantra.in/sitemap.xml
+Sitemap: https://thevisamantra.com/sitemap.xml
